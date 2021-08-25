@@ -1,3 +1,5 @@
+
+// this with the queries util, replaces the API.js file 
 import { gql } from '@apollo/client';
 
 // this allows us to use the LOGIN_USER mutation in graphql
@@ -30,7 +32,12 @@ export const SAVE_BOOK = gql`
     saveBook(bookData: $bookData) {
       _id, username, email, 
       savedBooks {
-        bookId, authors, image, description, title, link
+        bookId
+        authors
+        image
+        description
+        title
+        link
       }
     }
   }
