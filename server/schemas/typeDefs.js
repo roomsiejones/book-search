@@ -1,4 +1,5 @@
-// graphql
+// graphql  this is negating the needs of the api routes.
+
 const { gql } = require('apollo-server-express')
 
 const typeDefs = gql`
