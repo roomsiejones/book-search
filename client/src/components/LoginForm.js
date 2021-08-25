@@ -13,7 +13,7 @@ const LoginForm = () => {
   const [showAlert, setShowAlert] = useState(false);
   //destructuring the useMutation so we can use
   const [login, {error}] = useMutation(LOGIN_USER);
-  //basically if there's an error, this will run again
+  //basically if there's an error, show us the alert
   useEffect(() => {
     if (error) {
       setShowAlert(true);
@@ -46,7 +46,7 @@ const LoginForm = () => {
 
       console.log(data);
       Auth.login(data.login.token);
-      
+
     } catch (e) {
       console.error(e);
     }
