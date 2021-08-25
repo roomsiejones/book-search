@@ -22,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/roomsiejones/book-search/issues"
   },
-  "homepage": "https://github.com/roomsiejones/book-search#readme"
+  "homepage": "https://github.com/roomsiejones/book-search#readme",
+  "dependencies": {
+    "@apollo/client": "^3.4.9",
+    "apollo-server-express": "^2.25.2",
+    "express": "^4.17.1",
+    "graphql": "^15.5.1"
+  }
 }
